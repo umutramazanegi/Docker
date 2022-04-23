@@ -172,6 +172,24 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
   -  **Commands**
      -  Yönetmek istediğimiz bileşen için çalıştırmak istediğimiz komut
 - `docker image --help`  -> image bileşeni ile kullanabileceğimiz komutları listeler
+  -  **Commands Görevleri**
+     -    •	docker attach = Çalışan bir Container’a attach olmak için kullanılır.
+     -    •	build = Dockerfile'dan bir görüntü oluşturun
+     -    •	commit = Bir kapsayıcının değişikliklerinden yeni bir görüntü oluşturun
+     -    •	cp = Dosyaları/klasörleri bir kapsayıcı ile yerel dosya sistemi arasında kopyalayın
+     -    •	create = Yeni bir konteyner oluştur.
+     -    •	diff= Bir kapsayıcının dosya sistemindeki dosyalarda veya dizinlerde yapılan değişiklikleri inceleyin
+     -    •	events = Sunucudan gerçek zamanlı olayları alın
+     -    •	exec = Çalışan bir kapsayıcıda bir komut çalıştırın
+     -    •	export = Bir kapsayıcının dosya sistemini tar arşivi olarak dışa aktarın
+     -    •	history = Bir görüntünün geçmişini göster
+     -    •	images = Sistemdeki bütün Image’ları listeler. Şuanda image olmadığından boş bir liste gelecektir.
+     -    •	import = Bir dosya sistemi görüntüsü oluşturmak için içeriği bir tarball'dan içe aktarın
+     -    •	info = Sistem genelinde bilgileri görüntüleyin
+     -    •	inspect = Docker nesneleri hakkında düşük seviyeli bilgileri döndür
+     -    •	kill = Bir veya daha fazla çalışan kapsayıcıyı öldür
+     -    •	load = Tar arşivinden veya STDIN'den bir görüntü yükleyin
+     -    •	login = Docker kayıt defterinde oturum açın
 
 ## Container Temelleri-1
 - `docker container --help` ->  container bileşeni ile kullanabileceğim komutlar
