@@ -168,7 +168,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
      -   •	system = Docker Yönet
      -   •	trust = Docker görüntülerine olan güveni yönetin
      -   •	volume = Birimleri yönet
-
+![docker-components](./statik/docker_engine/management_commands.png)
   -  **Commands**
      -  Yönetmek istediğimiz bileşen için çalıştırmak istediğimiz komut
 - `docker image --help`  -> image bileşeni ile kullanabileceğimiz komutları listeler
