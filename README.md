@@ -115,9 +115,6 @@ Bilgisayarımızın kaynaklarını bilgisayarımızda oluşturacağımız sanal 
   - Rest API'nin en önemli kullanıcısı Docker CLI'dır
 - Bir docker engine kurduğumuzda o makinede hem docker server (daemon) hem de docker client (docker cli) kurulmuş olur
 - İstersek bu client (docker cli) uygulamasını localimize kurarak, cloudda kurduğumuz bir server (docker daemon)'ı yönetebiliriz. Yani bu 2 uygulama birbirinden farklıdır.
-Aşağıdaki görüntüyü incelerseniz eğer Docker’ın birden fazla parçadan bir araya gelmiş bir bütünsel yapılanma olduğunu anlarsınız. 
-- Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tarafından tool olan Docker CLI olmak üzere önem teşkil eden iki parçaya odaklanırsak eğer Docker Daemon esasında Docker Engine’in ta kendisidir ve bir arayüze sahip olmadığı için client tarafındaki Docker 
-CLI aracılığıyla aradaki REST API yapıları kullanılarak istenilen talimatlar Docker Engine’e iletilir. Yani içeriğin girişinde vurguladığımız gibi Docker CLI, Docker ile haberleşme görevini üstlenen komut satırıdır.
 
 ![docker-components](./static/giris/giris-1.png)
 
