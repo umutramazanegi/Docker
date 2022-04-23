@@ -71,7 +71,12 @@ Docker Notları.
 *[eğitimi](https://www.udemy.com/course/adan-zye-docker/) öneririm.
 ## Neden Docker
 
-Yeni nesil IT sistemleri Docker üzerinde koşuyor. En çok kullanılmak istenen platformlar listesinde üst sıralarda yer alıyor. İş ilanlarında aranan bir özellik :stuck_out_tongue_winking_eye:
+En çok kullanılmak istenen platformlar listesinde üst sıralarda yer alıyor. 
+- Docker, "konteynerleştirme" olarak da bilinen işletim sistemi seviyesinde sanallaştırma sağlayan bir bilgisayar programıdır. İlk sürümü 2013'te yayınlanmıştır. 
+örnek olarak virtualbox sanal makinesinde biz birden fazla linux iştelim sistemi kurmak istiyoruz. Birden fazla makine kurduk. Bu makinelere de farklı farklı görevler verdik.
+- Birden fazla görev verdiğimiz bu makinalar sistemde aşırı derece yerk kaplıcak. Hafızanın %30 kaplıcak. Bu performasda yavaşlamalar meydana gelecek. 
+Bunu önlemek için Docker programı ortaya çıktı. 
+Docker, yazılımları kitaplıklar, sistem araçları, kod ve çalışma zamanı dahil olmak üzere yazılımların çalışması için gerekli her şeyi içeren container adlı standartlaştırılmış birimler halinde paketler. Bu paketlemeler sayesinde docker, uygulamalarınızı hızla derlemenizi, test etmenizi ve dağıtmanızı sağlar.
 
 ## Sanallaştırma
 
@@ -87,7 +92,7 @@ Bilgisayarımızın kaynaklarını bilgisayarımızda oluşturacağımız sanal 
 - Sanallaştırma her ne kadar kaynak israfını minimuma indirse de yine de kaynak israfı mevcuttur. Bu sebeple container'lar hayatımıza girdi.
 - Linux containerlar sayesinde uygulamalar izole bir şekilde çalıştırılabildi fakat bu kolay bir işlem değildi.
 - **Namespaces**
-  - Linux çekirdeğinde bulunan yapı taşlarındandır. Prensibi çekirdek kaynaklarrının bölümlere ayrılmasıdır. Container izolasyonunun sağlanmasındaki birincil yapıdır.
+  - Linux çekirdeğinde (kernel) bulunan yapı taşlarındandır. Prensibi çekirdek kaynaklarrının bölümlere ayrılmasıdır. Container izolasyonunun sağlanmasındaki birincil yapıdır.
   - Bazı namespaces'ler
     - Net: Ağ arayüzlerini yönetir
     - PID: Süreçlerin izolasyonunu sağlar
@@ -110,6 +115,9 @@ Bilgisayarımızın kaynaklarını bilgisayarımızda oluşturacağımız sanal 
   - Rest API'nin en önemli kullanıcısı Docker CLI'dır
 - Bir docker engine kurduğumuzda o makinede hem docker server (daemon) hem de docker client (docker cli) kurulmuş olur
 - İstersek bu client (docker cli) uygulamasını localimize kurarak, cloudda kurduğumuz bir server (docker daemon)'ı yönetebiliriz. Yani bu 2 uygulama birbirinden farklıdır.
+Aşağıdaki görüntüyü incelerseniz eğer Docker’ın birden fazla parçadan bir araya gelmiş bir bütünsel yapılanma olduğunu anlarsınız. 
+- Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tarafından tool olan Docker CLI olmak üzere önem teşkil eden iki parçaya odaklanırsak eğer Docker Daemon esasında Docker Engine’in ta kendisidir ve bir arayüze sahip olmadığı için client tarafındaki Docker 
+CLI aracılığıyla aradaki REST API yapıları kullanılarak istenilen talimatlar Docker Engine’e iletilir. Yani içeriğin girişinde vurguladığımız gibi Docker CLI, Docker ile haberleşme görevini üstlenen komut satırıdır.
 
 ![docker-components](./static/giris/giris-1.png)
 
