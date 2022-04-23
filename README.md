@@ -258,9 +258,12 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
 - `docker cp basitapp:/app .` -> **container'ın kapanmış olması önemli değil yeter ki silinmemiş olsun.** basitapp adındaki container'ın app klasörünü host makinadaki bu dizine kopyala dedik.
 
 ## Teknik Şemada Gösterimi 
-- sadsad
-- sadasds
-- sdasdsd
+- Linux işletim sisteminde çekirdek olmayanı içerisinde çeşitli ve gerekli dosyalar var. 
+- İmage tüm bunların paketlenmiş halidir.
+Alpine çok küçük işletim dağıtımı(distribution) bunun içerisine java kurdum. Ardından app1 adında kendi yazdığım uygulamamı ve bu uygulamamın çalışabilmesi için gerekli kütüphaneleri bu sisteme kopyaladım. Sonra buna bir ayar yaptım. Bu image dan oluşturulacak containers başlatıldıkları zaman varsayılan olarak app1 uygulamasını başlatsın. Sonra bunu docker image haline getirdim. Docker hub’da bulunan ozgurozturknet isimli hesabımın altındaki app1 isimli depolama alanına koydum.
+İlkcontainer adında container oluşturduk. Ona bir ID değeri atanıyor. Yukarıda gösterildiği gibi…
+
+![docker-components](./statik/docker_engine/teknik_sema_gosterimi.png)
 
 ## Docker Katmanlı Dosya Sistemi Yapısı
 - Docker depolama alt yapısında **union file system** adı verilen bir yapı kullanır
