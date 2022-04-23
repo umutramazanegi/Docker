@@ -116,7 +116,7 @@ Bilgisayarımızın kaynaklarını bilgisayarımızda oluşturacağımız sanal 
 - Bir docker engine kurduğumuzda o makinede hem docker server (daemon) hem de docker client (docker cli) kurulmuş olur
 - İstersek bu client (docker cli) uygulamasını localimize kurarak, cloudda kurduğumuz bir server (docker daemon)'ı yönetebiliriz. Yani bu 2 uygulama birbirinden farklıdır.
 
-![docker-components](./static/giris/giris-1.png)
+![docker-components](./statik/docker_engine/daemon.png)
 
 
 ## Image ve Container (Docker)
