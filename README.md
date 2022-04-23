@@ -257,7 +257,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
     - `ctrl + p q`  kombinasyonu ile Container'ı kapatmadan arka plana alabiliriz
 - `docker cp basitapp:/app .` -> **container'ın kapanmış olması önemli değil yeter ki silinmemiş olsun.** basitapp adındaki container'ın app klasörünü host makinadaki bu dizine kopyala dedik.
 
-## Teknik Şamada Gösterimi 
+# Teknik Şamada Gösterimi 
 
 
 ## Docker Katmanlı Dosya Sistemi Yapısı
