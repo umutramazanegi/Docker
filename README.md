@@ -12,7 +12,7 @@
   - [Container Temelleri-1](#container-temelleri-1)
   - [Container Temelleri-2](#container-temelleri-2)
   - [Container Temelleri-3](#container-temelleri-3)
-  - [Teknik Şamada Gösterimi](#teknik-semada-gosterimi)
+  - [Teknik Şemada Gösterimi](#teknik-şemada-gösterimi)
   - [Docker Katmanlı Dosya Sistemi Yapısı](#docker-katmanlı-dosya-sistemi-yapısı)
   - [Docker Container Yaşam Süresi (Lifecycle)](#docker-container-yaşam-süresi-lifecycle)
   - [Docker Volume-Container Dışı Veri Saklama](#docker-volume-container-dışı-veri-saklama)
