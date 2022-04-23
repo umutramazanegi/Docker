@@ -192,7 +192,30 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
      -    •	kill = Bir veya daha fazla çalışan kapsayıcıyı öldür
      -    •	load = Tar arşivinden veya STDIN'den bir görüntü yükleyin
      -    •	login = Docker kayıt defterinde oturum açın
-      
+     -    •	logout = Docker kayıt defterinden çıkış yapın
+     -    •	logs = Bir kapsayıcının günlüklerini getir
+     -    •	pause = Bir veya daha fazla kapsayıcı içindeki tüm işlemleri duraklatın
+     -    •	port = Kapsayıcı için bağlantı noktası eşlemelerini veya belirli bir eşlemeyi listeleyin
+     -    •	ps = Kapsayıcıları listele
+     -    •	pull = Kayıt defterinden bir görüntü veya depo çekin
+     -    •	push = Bir görüntüyü veya veri havuzunu bir kayıt defterine gönderin
+     -    •	rename = Bir kapsayıcıyı yeniden adlandırın
+     -    •	restart = Bir veya daha fazla kapsayıcıyı yeniden başlatın
+     -    •	rm = Bir veya daha fazla kapsayıcıyı kaldırın
+     -    •	rmi = Bir veya daha fazla resmi kaldır
+     -    •	run = Yeni bir kapsayıcıda bir komut çalıştırın
+     -    •	save= Bir veya daha fazla görüntüyü tar arşivine kaydedin (varsayılan olarak STDOUT'a aktarılır)
+     -    •	search= Görüntüler için Docker Hub'da arama yapın
+     -    •	start= Bir veya daha fazla durdurulmuş kapsayıcı başlatın 
+     -    •	stats= Konteyner(ler) kaynak kullanım istatistiklerinin canlı akışını görüntüleyin
+     -    •	stop= Çalışan bir veya daha fazla kapsayıcıyı durdur
+     -    •	tag= SOURCE_IMAGE ile ilgili bir TARGET_IMAGE etiketi oluşturun
+     -    •	top = Bir kapsayıcının çalışan işlemlerini görüntüleyin
+     -    •	unpause= Bir veya daha fazla kapsayıcı içindeki tüm işlemleri duraklatın
+     -    •	update= Bir veya daha fazla kapsayıcının yapılandırmasını güncelleyin
+     -    •	version= Docker sürüm bilgilerini göster
+     -    •	wait= Bir veya daha fazla kapsayıcı durana kadar engelleyin, ardından çıkış kodlarını yazdırın
+  
 ![docker-components](./statik/docker_engine/commands.png)
 
 ## Container Temelleri-1
