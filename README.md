@@ -62,25 +62,25 @@
 
 
 # Giriş
-Docker öğrenirken aldığım notlar. 
+Docker Notları. 
 
-Genellikle Özgür Öztürk'ün [Docker eğitimi](https://www.udemy.com/course/adan-zye-docker/)ni izlerken not aldım.
+ Özgür Öztürk'ün [Docker eğitimi](https://www.udemy.com/course/adan-zye-docker/)ni 
 
-Elimin altında Türkçe kaynak olması için [Docker ve Konteyner Uygulamaları](https://www.amazon.com.tr/Docker-Konteyner-Uygulamalar%C4%B1-Deniz-Parlak/dp/6058060761/ref=sxts_sxwds-bia-wc-rsf-lq2a1_0?__mk_tr_TR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&cv_ct_cx=docker&dchild=1&keywords=docker&pd_rd_i=6058060761&pd_rd_r=adeb9eba-433e-4a3e-86e0-e81304013581&pd_rd_w=yeCbD&pd_rd_wg=E8mQH&pf_rd_p=1afd11f1-1dc6-4ec0-a331-2a221d78fd95&pf_rd_r=ZQNNXBF5BV4D5Z92G71P&psc=1&qid=1610552031&sr=1-1-569cd1f4-72a6-4f1d-b3c5-cf7f1ae39fbb) kitabını almıştım ve bazen buradan faydalandım.
+*Metinlerin bir bölümünü Özgür Hoca'nın sunumundan alındı.
 
-*Metinlerin bir bölümünü Özgür Hoca'nın sunumundan aldım.
-
-*Naçizane; [eğitimi](https://www.udemy.com/course/adan-zye-docker/) şiddetle önerebilirim
+*[eğitimi](https://www.udemy.com/course/adan-zye-docker/) öneririm.
 ## Neden Docker
 
 Yeni nesil IT sistemleri Docker üzerinde koşuyor. En çok kullanılmak istenen platformlar listesinde üst sıralarda yer alıyor. İş ilanlarında aranan bir özellik :stuck_out_tongue_winking_eye:
 
 ## Sanallaştırma
 
-- Temelde bir fiziksel makina üzerinde birden fazla sanal makina kurup, kaynak dağıtımını ve ortak kaynak kullanımını sağlayan sisteme verilen isimdir.
-- Bu sayede fiziksel sunuculardaki atıl kapasiteyi minimuma indirebiliriz.
-  - Kaynak israfı önlenir
-  - Her uygulama izole edilmiştir, bu sayede bir uygulamada çıkan sorun diğer uygulamaları etkilemeyecektir
+- Hepimiz bilgisayar kullanıyoruz. Bilgisayarımızın çeşitli kaynakları var. Mesela depolma,işlemci,kablolu veya kablosuz ağ kartları, görüntü işlemcisi, Geçici bellek(RAM)
+Bilgisayarımızın kaynaklarını bilgisayarımızda oluşturacağımız sanal bilgisayarlara paylaşmaya yarayan teknolojisidir. Bilgisayarın 16 gb ramı olsun. Sanal bilgisayarımıza maksimum 2 gb ram kullanabilirsin diyebiliriz. 
+- Sanallaştırma teknolojisi web sunucularında, depolama sistemlerinde kurumsal ıt sistemleri, veri işleme gibi alanlarda kullanabiliriz. 
+- Bir şirkette bulunan fiziksel sunucunun içerisine aynı anda bir mail server hem yedekleme sunucusu ayrı ayrı bilgisayarlarmış gibi çalışabiliyor bu özelliği sağlayan şey sanallaştırma teknolojisi.
+- Sanallaştırma teknolojisi ile kendi bilgisayarımıza bir şey yapmadan işlemlerimizi gerçekleştirebileceğiz.
+
 
 ## Container (Linux)
 
