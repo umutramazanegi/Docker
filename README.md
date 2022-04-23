@@ -168,7 +168,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
      -   •	system = Docker Yönet
      -   •	trust = Docker görüntülerine olan güveni yönetin
      -   •	volume = Birimleri yönet
-     -   
+   
 ![docker-components](./statik/docker_engine/management_commands.png)
 
   -  **Commands**
@@ -192,7 +192,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
      -    •	kill = Bir veya daha fazla çalışan kapsayıcıyı öldür
      -    •	load = Tar arşivinden veya STDIN'den bir görüntü yükleyin
      -    •	login = Docker kayıt defterinde oturum açın
-     -    
+      
 ![docker-components](./statik/docker_engine/commands.png)
 
 ## Container Temelleri-1
