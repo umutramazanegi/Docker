@@ -151,23 +151,23 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
   -  **Management Commands**
      -  Yönetebileceğimiz bileşenlerin listesi
   -  **Management Commands Görevleri**
-     -  •	builder = Yapıyı yönet
-        •	checkpoint = Kontrol noktasını yönet
-        •	config = Docker yapılandırmasını yönet
-        •	container =Konteyner yönet
-        •	context =  Bağlam yönet
-        •	image =  Görüntüleri yönet
-        •	manifest = Docker görüntü bildirimlerini ve bildirim listesini yönet
-        •	network = Network yönet
-        •	node = Sürü düğümünü yönet
-        •	plugin = Eklentileri yönet
-        •	secret = Docker sırlarını yönet
-        •	service = Servis yönet
-        •	stack = Docker yığınını yönet
-        •	swarm = Sürü yönet
-        •	system = Docker Yönet
-        •	trust = Docker görüntülerine olan güveni yönetin
-        •	volume = Birimleri yönet
+     -   •	builder = Yapıyı yönet
+     -   •	checkpoint = Kontrol noktasını yönet
+     -   •	config = Docker yapılandırmasını yönet
+     -   •	container =Konteyner yönet
+     -   •	context =  Bağlam yönet
+     -   •	image =  Görüntüleri yönet
+     -   •	manifest = Docker görüntü bildirimlerini ve bildirim listesini yönet
+     -   •	network = Network yönet
+     -   •	node = Sürü düğümünü yönet
+     -   •	plugin = Eklentileri yönet
+     -   •	secret = Docker sırlarını yönet
+     -   •	service = Servis yönet
+     -   •	stack = Docker yığınını yönet
+     -   •	swarm = Sürü yönet
+     -   •	system = Docker Yönet
+     -   •	trust = Docker görüntülerine olan güveni yönetin
+     -   •	volume = Birimleri yönet
 
   -  **Commands**
      -  Yönetmek istediğimiz bileşen için çalıştırmak istediğimiz komut
