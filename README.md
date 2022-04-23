@@ -257,10 +257,10 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
     - `ctrl + p q`  kombinasyonu ile Container'ı kapatmadan arka plana alabiliriz
 - `docker cp basitapp:/app .` -> **container'ın kapanmış olması önemli değil yeter ki silinmemiş olsun.** basitapp adındaki container'ın app klasörünü host makinadaki bu dizine kopyala dedik.
 
-## Teknik Şamada Gösterimi 
--sadsad
--sadasds
--asdasdsd
+## Teknik Şemada Gösterimi 
+- sadsad
+- sadasds
+- sdasdsd
 
 ## Docker Katmanlı Dosya Sistemi Yapısı
 - Docker depolama alt yapısında **union file system** adı verilen bir yapı kullanır
