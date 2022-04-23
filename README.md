@@ -147,9 +147,28 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
 - `docker info` -> Docker ile ilgili temel bilgilere erişiriz (kaç container çalışıyor, drivers vb.)
 - `docker`  -> Docker CLI'da kullanabileceğimiz komutları listeler
   - **Options**
-    - Docker Daemon'a bağlanırken kullanacağımız parametreler gözükür
+    - Docker Daemon'a bağlanırken kullanacağımız parametreler gözükür. Options kısmında Docker daemon’a bağlanırken kullanabileceğimiz çeşitli opsionları görebiliyoruz.
   -  **Management Commands**
      -  Yönetebileceğimiz bileşenlerin listesi
+  -  **Management Commands Görevleri**
+     -  •	builder = Yapıyı yönet
+        •	checkpoint = Kontrol noktasını yönet
+        •	config = Docker yapılandırmasını yönet
+        •	container =Konteyner yönet
+        •	context =  Bağlam yönet
+        •	image =  Görüntüleri yönet
+        •	manifest = Docker görüntü bildirimlerini ve bildirim listesini yönet
+        •	network = Network yönet
+        •	node = Sürü düğümünü yönet
+        •	plugin = Eklentileri yönet
+        •	secret = Docker sırlarını yönet
+        •	service = Servis yönet
+        •	stack = Docker yığınını yönet
+        •	swarm = Sürü yönet
+        •	system = Docker Yönet
+        •	trust = Docker görüntülerine olan güveni yönetin
+        •	volume = Birimleri yönet
+
   -  **Commands**
      -  Yönetmek istediğimiz bileşen için çalıştırmak istediğimiz komut
 - `docker image --help`  -> image bileşeni ile kullanabileceğimiz komutları listeler
