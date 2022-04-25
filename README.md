@@ -266,9 +266,27 @@ Alpine çok küçük işletim dağıtımı(distribution) bunun içerisine java k
 ![docker-components](./statik/docker_engine/teknik_sema_gosterimi.png)
 
 ## Docker Katmanlı Dosya Sistemi Yapısı
+![docker-components](./statik/docker_engine/Dosya_Yapısı_Sistemi1.png)
+
 - Docker depolama alt yapısında **union file system** adı verilen bir yapı kullanır
 - Docker imajları mevcut bir base imaj üzerine inşa edilir
 - Bu imaj üzerine yapılan her değişiklik birer katman olarak eklenir ve bu katmanlar birer dosya olarak saklanır
+- Merhaba.sh uygulamasının çalışacağı docker image’i oluşturma;
+Öncelikle temel bir gnu/linux dağıtımının image hali gereklidir. (GNU/Linux işletim sistmeminin kernel olmayan hali)
+Uygulama bu image içine kopyalanır.
+Container başlatıldığında çalışması için uygulama ayarlanır. (Bu image kullanılarak bir container oluşturulursa bu komut çalışsın ayarının yapılması)
+Tüm bunlar bir araya geitirldikten sonra bir tag (isim gibi düşünülebilir) atanır. Ardından tüm bu katmanlar bir bütün halinde paketlenir. Bu pakete image adı verilir.
+
+![docker-components](./statik/docker_engine/Dosya_Yapısı_Sistemi2.png)
+
+- Bir image dosyası oluşturulduktan sonra bu image kullanılarak container oluşturulmak istenildiğinde, docker image’i sadece okunabilir halde tutuyor. Üstüne yazılabilir bir katman ilave ediyor.
+- Docker bir image dosyası kullanarakbir container oluşturduğunda image dosyasının kopyasını alıp bundan bir container oluşturmaz. Bunun yerine bu image read-only olarak yüklenir ve bunun üstüne boş bir yazılabilir katman ekler. Container böyle çalıştırılır. Container içinde yapılan tüm değişiklikler bu yazılabilir katmana yazılır ve sadece o container için geçerli olur.
+- Aynı image kullanılarak başka bir container oluşturulduğunda yine bu image sadece okunabilir olarak tutulur. Yeni container için yeni bir yazılabilir katman oluşturulur. Yani her container’ın kendine ait yazılabilir bir katmanı olur. Tüm değişiklikler bu katmanda tutulur.
+**Çalışmayan containerların sistemden temizlenmesi :** docker container prune
+**Sistemdeki image’leri listeleme :** docker image ls
+**Sistemdeki tüm image dosyalarını silme :** docker image prune -a
+**Docker Hub üzerinden image Çekme :** docker image pull Alpine
+**docker image pull ozgurozturknet/hello-app
 
 
 ## Docker Container Yaşam Süresi (Lifecycle)
