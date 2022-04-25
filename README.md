@@ -320,6 +320,9 @@ Tüm bunlar bir araya geitirldikten sonra bir tag (isim gibi düşünülebilir) 
 - `docker container run --name mydebiancontainer -it -v ilkvolume:/uygulama debian sh`
   - debian imajından mydebiancontainer adında container oluştur, /uygulama klasörüne ilkvolume volume'unu bağla ve sh ile container'a bağlan
   - burdan aynı şekilde klasöre gidip cat ile dosya içerisine bakarsak yazdığımız verinin orda bulunduğunu görebiliriz
+- Gördüğümüz üzere yarattığımız konteyner. Tamamen silinmiş olmasına rağmen bu volume uygulama isimli klasörüne bağlamıştım. Onun içersine dosya eklemiştim. Conrainer’i daha sonra sildim. Bu volume başka bir container’a bağladım. Aynı dosyayı buradan da erişebiliyorum. Volume bize bunu sağlıyor. Benim dosyayı konteyner dışında tutmamı sağlıyor. Bir volume birden fazla container’ bağlayabiliyoruz. Deneme adında bir container oluşturdum. Ona da ilkdeneme volume bağladım. Bunlara birbirleri ile işlem yapabiliyorum.
+- Docker container run –it –v ilkvolume:/denem3:ro centos sh   
+- :ro (read only sadece okunabilir olarak bağlanmasını istiyorum.) Yani ilkvolume bir şeyler ekliyemiyoruz. 
 
 
 ## Docker Boş-Dolu Volume Davranışları
