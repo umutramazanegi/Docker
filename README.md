@@ -372,7 +372,7 @@ Tüm bunlar bir araya geitirldikten sonra bir tag (isim gibi düşünülebilir) 
 
 ## Docker Network Objeleri-1
 - `docker network ls`  -> sistemdeki kurulu network objeleri listeler
-- `docker network inspect bridge` -> bridge NAME'ine sahip objenin özelliklerini listeler
+- `docker network inspect bridge` -> bridge NAME'ine sahip objenin özelliklerini listeler **inspect detaylı özelliklerini verir**
 - `docker container run --net <NetworkObject> <CONTAINER>`
   - `--net` ile network objesini vererek ilgili network'e bağlanabiliriz
   - `docker container run --net none <CONTAINER>`  -> container'a ağ bağlantısı olmaz (none)
