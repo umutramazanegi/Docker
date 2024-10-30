@@ -225,7 +225,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
 - `docker container run --name ilkcontainer ozgurozturknet/app1` -> **ilkcontainer** adında bir container oluşturdu ve docker hub'da ozgurozturknet altındaki varsayılan (app1) uygulamasını çalıştırdı
 - `docker container ls -a` -> sistemdeki tüm container'ları listeler. -a olmasaydı sadece çalışan container'ları listelerdi
 - **Container içerisindeki varsayılan olarak çalışması için ayarlanan uygulama durduğunda container'da kapatılır**
-- docker image pull ozgurozturknet/appi ->  ozgurozturknet appisini docker’a çektik. Bu imageden bir container oluşturacağız. 
+- docker image pull ozgurozturknet/app1 ->  ozgurozturknet appisini docker’a çektik. Bu imageden bir container oluşturacağız. 
 - docker container run --name ilkcontainer  ozgurozturknet/app1 images ile ilk containerı yarattık. 
 - Container başlatıldı. İçersindeki uygulama başlatıldı. Uygulama merhaba arkadaşlar ben app1 uygulamasayım yazısını yazmaktı. 
 - Pull yapmadanda direk oluşturabilirdik. docker container run --name ilkcontainer  ozgurozturknet/app1 bu şekilde container oluşturduğumuzda sistemde ozgurozturknet/app1 yoksa otomatikmen pull edecek. Sistemde localde bulamayınca docker hub’a soruyor. Docker hubdan çekiyor.
@@ -245,7 +245,7 @@ Bu parçalardan; server tarafındanki ana tool olan Docker Daemon ile client tar
   - Çalışan bir container silinemez bunu öncelikle durdurmamız gerekir ya da **-f** parametresi kullanılarak **force** ederek sileriz
   - `docker container prune` 
     - sistemdeki çalışmayan tüm container'ları siler
-
+  - docker container -a  >>> docker ps -a aynı şeyler
 
 ## Container Temelleri-3
 - `docker container run --name websunucu -p 80:80 -d ozgurozturknet/adanzyedocker` 
